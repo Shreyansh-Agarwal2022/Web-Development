@@ -1,0 +1,153 @@
+/* CSS RESET */
+
+* {
+    margin:0;
+    padding:0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Segoe UI';
+}
+
+/* UTILITIES */
+
+.red {
+    background-color: rgb(255, 65, 31);
+}
+
+.blue {
+    background-color: dodgerblue;
+}
+
+.green {
+    background-color: limegreen;
+}
+
+.yellow {
+    background-color: gold;
+}
+
+.vl {
+    border-left: 2px solid black;
+    height: 3.5vh;
+    margin-left:1.5vw;
+    margin-right:1.5vw;
+}
+
+/* HEADER */
+
+.logo-symbol {
+    padding:10px;
+    padding-right:8px;
+    padding-left:60px;
+
+    display:grid;
+    gap:0.07rem;
+    grid-template-columns: repeat(2,13px);
+    align-content: flex-start;
+    justify-content: top;
+}
+
+.logo-name {
+    font-size: 22px;
+    font-weight: 600;
+    color:rgb(90, 90, 90);
+}
+
+.logo-part {
+    display:block;
+    width:13px;
+    height:13px;
+}
+
+.header-link a {
+    color:black;
+    text-decoration: none;
+    font-size: larger;
+    font-weight: 600;
+}
+
+header ul {
+    display:flex;
+    align-items:center;
+    margin-left:1.5vw;
+    margin-right:1vw;
+    list-style-type: none;
+    gap:2rem;
+    font-size:small;
+}
+
+header ul a {
+    color:black;
+    text-decoration: none;
+}
+
+header ul :is(a:hover, a:focus) {
+    text-decoration-line: underline;
+    text-decoration-thickness: 0.15em;
+    text-underline-offset: 6px;
+}
+
+header p :is(a:hover, a:focus) {
+    text-decoration-line: underline;
+    text-decoration-thickness: 0.1em;
+    text-underline-offset: 5px;
+}
+
+.header-right {
+    position:absolute;
+    right:0;
+}
+
+.header-right .header-photo {
+    height: 5vh;
+    width: 5vh;
+    border-radius:50%;
+    background-image: url('https://cdn.pixabay.com/photo/2023/07/07/20/04/bighorn-sheep-8113311_1280.jpg');
+    background-size: cover;
+    border: 1px solid black;
+}
+
+header {   
+    background-color: white;
+
+    min-height:8vh;
+    min-width:100%;
+    position:sticky;
+    top: 0;
+    z-index: 2;
+
+    display: flex;
+    align-items: center;
+
+    z-index: 2;
+}
+
+.whole-content {
+    display: flex;
+    flex-direction: column;
+}
+
+@media screen and (max-width : 1000px) {
+    .logo-symbol {
+        padding-left: 40px;
+    }
+    #header-help {
+        display:none;
+    }
+}
+
+.button {
+    position: fixed;
+    bottom: 50px;
+    right: 50px;
+    width: 50px;
+    height: 50px;
+    padding-top: 10px;
+    background-color: lightgray;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 1;
+}
