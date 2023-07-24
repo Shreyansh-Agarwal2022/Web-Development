@@ -163,7 +163,6 @@ main {
     font-weight: 500;
     text-decoration: none;
     margin-left: 3px;
-    margin-right: 40px;
 }
 
 .main-3 :is(a:hover, a:focus), .main-8 :is(a:hover, a:focus), .main-9 :is(a:hover, a:focus) {
