@@ -151,3 +151,9 @@ html {
         min-width: 90px;
     }
 }
+
+@media screen and (max-width: 360px) {
+    .main-header li a {
+        padding: 7px 3px;
+    }
+}
