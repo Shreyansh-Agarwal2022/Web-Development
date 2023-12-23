@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Shreyansh Thoughts</title>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width,initial-scale=1" />
+    <meta name="description" content="" />
+
+    <link rel="icon" type="image/x-icon" href="images/logo.png">
+
+    <link rel="stylesheet" type="text/css" href="styles/header_footer.css">
+    <link rel="stylesheet" type="text/css" href="styles/blog_style.css">
+
+    <script defer src="script/script.js"></script>
+</head>
+<body>
+    <header class="main-header">
+        <h2><a href="javascript:void(0);">Shreyansh Thoughts</a></h2>
+
+        <div class="menu">
+            <ul id="menu-list">
+                <li><a href="javascript:void(0);">About</a></li>
+                <li class="dropdown">
+                    <a href="javascript:void(0);" class="dropbtn" id="contact">Contact</a>
+                    <div class="dropdown-content" id="contactList">
+                        <a href="https://twitter.com/shreyansh_2022" target="_blank">Twitter (𝕏)</a>
+                        <a href="https://www.linkedin.com/in/shreyansh-agarwal-7528a625a" target="_blank">LinkedIn</a>
+                        <a href="https://github.com/Shreyansh-Agarwal2022" target="_blank">GitHub</a>
+                    </div>
+                </li>
+                <li><a href="javascript:void(0);">Home</a></li>
+            </ul>
+        </div>
+    </header>
+
+    <main class="blog-main">
+        <h1 id="blog-title">Turing: The Man Who Invented the Computer and Challenged the Limits of Thinking</h1>
+        <h4 id="blog-date">1<sup>st</sup> January 2024</h4>
+        <img src="images/turing_blog.png" width="1104px" height="610px" alt="Blog Image of Turing" id="blog-image">
+        <div id="table-of-contents">
+            <div class="flex-container">
+                <h4 id="blog-index-heading" class="blog-heading">Table of Contents</h4>
+                <div class="arrow-down" id="blog-index-visible"></div>     <!--    Can do CSS ANIMATION work here  -->
+            </div>
+            <ul id="blog-index">
+                <li><a href="#heading1">Introduction</a></li>
+                <li><a href="#heading2">Who is Alan Turing?</a></li>
+                <li><a href="#heading3">The Turing Machine</a></li>
+                <li><a href="#heading4">Turing's Test</a></li>
+                <li><a href="#heading5">The Film "The Imitation Game" (2014)</a></li>
+                <li><a href="#heading6">Turing Award</a></li>
+                <li><a href="#heading7">Tragic End of Alan Turing's life</a></li>
+                <li><a href="#heading8">Conclusion</a></li>
+            </ul>
+        </div>
+
+        <h4 class="blog-heading" id="heading1">Introduction</h4>
+        <p class="blog-paragraph"><b>Alan Turing</b>, the unsung hero of Computer Science, often goes unnoticed by many, even those immersed in the field. I discovered his profound contributions after a weekend spent watching <b>'The Imitation Game' (2014)</b>. Inspired, I decided to write this blog, hoping to introduce you to the genius behind modern computing, Alan Turing, a remarkable mathematician and the father of Modern Computer Science.</p>
+        
+        <h4 class="blog-heading" id="heading2">Who is Alan Turing?</h4>
+        <p class="blog-paragraph">Alan Turing was an <b>English Mathematician</b> and <b>Computer Scientist</b> who was born in <b>London</b>. He entered the University of Cambridge to study mathematics in 1931. In 1938, he obtained his PhD from the Department of Mathematics at Princeton University.</p>
+        <p class="blog-paragraph indent">He was famous for his invention of Turing's machine <b>Bombe</b> which was used to decode the <b>Enigma encryption</b> of the German Army which helped Britain to get an edge in WW2. Many of us should thank him for the development of the Turing Machine which helped in developing modern computers.</p>
+        <p class="blog-paragraph indent">He also wrote Turing's paper called "The Imitation Game" which coined the idea of AI. That's why he is also called the Father of AI. Alan Turing had an IQ of <b>185</b>, which put him in the top 0.1% of the population. He was also married to Clarke who helped him decode the Enigma encryption.</p>
+        <img src="images/alan.png" width="640px" heigth="640px">
+        
+        <h4 class="blog-heading" id="heading3">The Turing Machine</h4>
+        <p class="blog-paragraph indent">As per Wikipedia, a Turing machine is a mathematical abstraction representing a computational model that manipulates symbols on a tape following a set of rules. Despite its simplicity, this model is capable of executing any computer algorithm.</p>
+        <p class="blog-paragraph indent">In 1936, Alan Turing, alongside fellow code-breaker Gordon Welchman, developed the Universal Turing Machine called the Bombe. Initially designed to decipher encrypted Enigma messages, it was the synergy of machine logic and human understanding that led to pivotal breakthroughs. The machine played a crucial role in aiding Britain's victory over Nazi Germany in World War II.</p>
+        <p class="blog-paragraph indent">For those in Computer Science majors, the Theory of Computation often includes studying the Turing Machine. It serves as a foundational concept in understanding computation. And because of this machine, Alan Turing is called the father of Modern Computer Science.</p>
+        <p class="blog-paragraph">If you want to understand the Turing Machine further, check out this video:</p>
+        <iframe width="814" height="458" src="https://www.youtube.com/embed/dNRDvLACg5Q" title="Turing Machines Explained - Computerphile" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+
+        <h4 class="blog-heading" id="heading4">Turing's Test</h4>
+        <p class="blog-paragraph">The Turing Test, conceptualized by the pioneering mind of Alan Turing, is a benchmark in the field of artificial intelligence. Proposed in 1950, this test assesses a machine's ability to exhibit intelligent behavior indistinguishable from that of a human. In essence, if a human evaluator interacting with both a machine and a human cannot reliably distinguish between the two based on their responses, the machine is said to have passed the Turing Test.</p>
+        <p class="blog-paragraph indent">Turing's motivation behind this test was to explore the question, "Can machines think?" It delves into the realm of machine intelligence and challenges our understanding of what it means to truly comprehend, reason, and communicate—a question as relevant today as it was when Turing first posed it. The Turing Test has become a touchstone for advancements in artificial intelligence and remains a thought-provoking benchmark in the ongoing dialogue about the capabilities and limitations of machines in imitating human intelligence.</p>
+        <p class="blog-paragraph indent">With the recent rise of generative AI, which produces text, images, and video on command, <b>computers have passed the Turing test</b>. Programs like ChatGPT, Bard, Claude AI, etc. can convincingly come off as humans in a dialogue.</p>
+        <p class="blog-paragraph">I found a great video explaining Turing's Test, take a look :</p>
+        <iframe width="949" height="534" src="https://www.youtube.com/embed/3wLqsRLvV-c" title="The Turing test: Can a computer pass for a human? - Alex Gendler" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+
+        <h4 class="blog-heading" id="heading5">The Film "The Imitation Game" (2014)</h4>
+        <p class="blog-paragraph">I watched this movie last weekend as of writing this blog, and it's a pretty interesting movie. I would give it a solid 4⭐ out of 5 and it's a good watch. I had <b>Benedict Cumberbatch</b> (as Alan Turing) which adds depth to the character in the movie. The movie is very well shot with the theme of how old Britain would have been during World War 2. It also showed the Turing Machine made by Alan and his team. But the machine was named <b>Christoper</b> (a friend of Alan in school shown in the film) but in real life, it was named <b>Bombe</b>. This was done to connect the audience more with the character. It also talked about the tragic end of Alan Turing's life and you can feel the pain of him.</p>
+        <img src="images/film.png" width="1024px" height="768px">
+        <p class="blog-paragraph indent">I also want to talk about a scene from the film in which Alan and a detective are having a conversation about the Turing Test, and the detective asks "Can machines think?" and Alan answers "Of course machines can't as people do, the machine is different from a person because they think differently?" and when I watched that scene my first thought was ChatGPT. In 2014, the writers wouldn't have thought that ChatGPT would be released and would be connected with it.</p>
+        <p class="blog-paragraph indent">But the movie had a lot of drama, to engage the audience. And while taking creative license into account, the film was just <b>42.3%</b> accurate when compared to real-life events.</p>
+        <p class="blog-paragraph">To know more about these factual inaccuracies, look at this article from The Washington Post : <u><a href="https://www.washingtonpost.com/national/health-science/what-imitation-game-didnt-tell-you-about-alan-turings-greatest-triumph/2015/02/20/ffd210b6-b606-11e4-9423-f3d0a1ec335c_story.html" target="_blank">here</a></u></p>
+
+        <h4 class="blog-heading" id="heading6">Turing Award</h4>
+        <p class="blog-paragraph">According to Wikipedia, The ACM A. M. Turing Award is an annual prize given by the Association for Computing Machinery for contributions of lasting and major technical importance to computer science.</p>
+        <p class="blog-paragraph indent">The latest Turing Award was given in 2022 to <b>Robert Metcalfe</b> for inventing Ethernet. As I am from India, the Indian who won this award was Dabbala Rajagopal, often known as <b>Raj Reddy</b>, an Indian American computer scientist for pioneering the design and construction of large-scale artificial intelligence systems.</p>
+        <img src="images/turing-award.png" width="375px" height="268px">
+
+        <h4 class="blog-heading" id="heading7">Tragic End of Alan Turing's life</h4>
+        <p class="blog-paragraph">Life is rarely a seamless journey, and the story of Alan Turing reflects this truth. As a <b>homosexual</b> in the 1940s when homosexuality was illegal, he faced legal repercussions. Despite privately confiding in his wife about his sexuality, she reportedly remained unfazed. Turing, realizing the challenges ahead, ended his engagement with Clarke in mid-1941. Unfortunately, his life took a tragic turn, culminating in his untimely death by <b>suicide</b> from cyanide poisoning on <b>June 7, 1954.</b></p>
+
+        <h4 class="blog-heading" id="heading8">Conclusion</h4>
+        <p class="blog-paragraph">In conclusion, the life of Alan Turing, the brilliant mind behind the modern computer, is a tapestry of innovation, adversity, and courage. From his groundbreaking work during World War II to the conceptualization of the Turing Machine and the enduring legacy of the Turing Test, Turing's contributions have shaped the landscape of computer science. As we reflect on his story, let us appreciate not only the genius that propelled us into the digital age but also the complexities of a life marked by triumphs and challenges. Alan Turing's legacy remains a testament to the limitless potential of human intellect, inspiring generations to come.        </p>
+        <p class="blog-paragraph indent">Despite his profound contributions, the narrative takes a somber turn towards an unfortunate end. For those intrigued by his story, "The Imitation Game" film provides a captivating portrayal—worth a watch to delve deeper into the legacy of this extraordinary mind.</p>
+        <p class="blog-paragraph indent">Thank you for reading till the end! 🙌 I hope you found this blog enjoyable and interesting. You can also read my other blogs on my profile.</p>
+    </main>
+
+    <footer class="main-footer">
+        <h3>Made by Shreyansh</h3>
+        <p>If you found any bug, please mail me with screenshot on : <u>shreyanshagarwal2022@gmail.com</u></p>
+        <p><a href="#blog-title"><u>Back To Top</u></a></p>
+    </footer>
+</body>
+</html>
