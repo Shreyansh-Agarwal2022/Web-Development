@@ -141,9 +141,13 @@ html {
         align-items: center;
         text-align: center;
     }
-
+    
     .main-header li a {
         padding: 10px 5px;
         font-size: 0.9rem;
+    }
+
+    .main-header .dropdown-content {
+        min-width: 100px;
     }
 }
