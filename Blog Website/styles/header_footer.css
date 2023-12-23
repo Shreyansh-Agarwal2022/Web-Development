@@ -148,6 +148,6 @@ html {
     }
 
     .main-header .dropdown-content {
-        min-width: 100px;
+        min-width: 90px;
     }
 }
