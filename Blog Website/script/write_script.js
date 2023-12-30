@@ -5,6 +5,7 @@ let blogIndexDirection = true;
 
 //Event-Listener for table of contents to show and hide on click of an arrow button
 blogIndex.addEventListener("click", function() {
+    console.log("Working");
     if (blogIndexDirection) {
         blogIndexDirection = false;
         blogIndex.style.transform = "rotate(180deg)";
@@ -138,6 +139,8 @@ function addElementToMain() {
     //TODO : add functionality to add links in paragraph and add logic to add indent in non-first paragraph.
 }
 
+let editDone = false;
+
 //Executes after submit button clicked. It removes form section from HTML file and generates HTML for main part of the blog
 function getBlog() {
     const formSection = document.getElementById("write-content");
@@ -157,6 +160,7 @@ function getBlog() {
 
     //TODO : change it to generate a text file of content in main
     main.innerHTML+= `<a onclick="this.href='data:text/html;charset=UTF-8,'+encodeURIComponent(document.documentElement.outerHTML)" href="#" download="write.html" style="margin: 20px auto;padding: 5px;background-color:white;color:black;font-family:Arial">Download</a>`;
+    editDone = true;
 }
 
 // Event delegation - listen for clicks on the #main container
@@ -164,7 +168,7 @@ main.addEventListener('click', function (event) {
     const target = event.target;
 
     // Check if the clicked element has the deletable-content class
-    if(target.id !== "blog-title" && target.id !== "blog-date" && target.id !== "blog-image")
+    if(!["blog-title","blog-date","blog-image","table-of-contents","blog-index-visible","blog-index-heading"].includes(target.id)) 
     {
         let clickCount = parseInt(target.getAttribute('data-click-count')) || 0;
         let lastClickTime = parseInt(target.getAttribute('data-last-click-time')) || 0;
@@ -181,7 +185,7 @@ main.addEventListener('click', function (event) {
         target.setAttribute('data-click-count', clickCount);
         target.setAttribute('data-last-click-time', currentTime);
 
-        if (clickCount === 3) {
+        if (clickCount === 3 && !editDone) {
             target.remove();
         }
     }
