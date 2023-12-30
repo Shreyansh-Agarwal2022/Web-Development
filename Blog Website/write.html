@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Shreyansh Thoughts</title>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width,initial-scale=1" />
+    <meta name="description" content="" />
+
+    <link rel="icon" type="image/x-icon" href="images/logo.png">
+
+    <link rel="stylesheet" type="text/css" href="styles/header_footer.css">
+    <link rel="stylesheet" type="text/css" href="styles/write_blog.css">
+
+    <script defer src="script/write_script.js"></script>
+</head>
+<body>
+    <header class="main-header">
+        <h2><a href="javascript:void(0);">Shreyansh Thoughts</a></h2>
+
+        <div class="menu">
+            <ul id="menu-list">
+                <li><a href="javascript:void(0);">Write</a></li>
+                <li class="dropdown">
+                    <a href="javascript:void(0);" class="dropbtn" id="contact">Contact</a>
+                    <div class="dropdown-content" id="contactList">
+                        <a href="https://twitter.com/shreyansh_2022" target="_blank">Twitter (𝕏)</a>
+                        <a href="https://www.linkedin.com/in/shreyansh-agarwal-7528a625a" target="_blank">LinkedIn</a>
+                        <a href="https://github.com/Shreyansh-Agarwal2022" target="_blank">GitHub</a>
+                    </div>
+                </li>
+                <li><a href="javascript:void(0);">Home</a></li>
+            </ul>
+        </div>
+    </header>
+
+    <section id="instructions-pop-up" class="flex-container">
+        <h4>Instructions on How to use Writing tools</h4>
+        <ol>
+            <li>1. You can still edit text in many elements you added.</li>
+            <li>2. The first form is for inserting the blog cover image.</li>
+            <li>3. The second form is used for inserting image, paragraph, heading etc.</li>
+            <li>4. Quickly clicks 3 times to delete the elements added by second form</li>
+            <li>5. In writing you can use &ltb&gt and &lt/b&gt for bold content in paragraph.</li>
+            <li>6. In inserting Image, we want 3 parameters : url;;;width(in px);;;height(in px) [In this format only]</li>
+            <li>7. For inserting list, you can break to new points with ;;; and note that list is not editable after insert</li>
+            <li>8. Clear Button is to clear the textbox and Submit button is to finish editing and get download option of your blog.</li>
+        </ol>
+        <h4 id="close-pop-up" onclick="closePopup()">Close</h4>
+    </section>
+
+    <main class="blog-main">
+        <h1 id="blog-title" contenteditable="true">Please Edit this Blog Title here</h1>
+        <h4 id="blog-date" contenteditable="true">1<sup>st</sup> January 2000 (Edit It)</h4>
+        <form id="insert-image" class="flex-container" target=_self>
+            <table>
+                <tr>
+                    <td><label for="image-url">URL of Image : </label></td>
+                    <td><input type="text" id="image-url" name="image-url" required></td>
+                </tr>
+                <tr>
+                    <td><label for="image-width">Width(in px) : </label></td>
+                    <td><input type="text" id="image-width" name="image-width" required></td>
+                </tr>
+                <tr>
+                    <td><label for="image-height">Height(in px) : </label></td>
+                    <td><input type="text" id="image-height" name="image-height" required></td>
+                </tr>
+                <tr>
+                    <td colspan="2"><button onclick="insertImage()" type="button">Submit</button></td>
+                </tr>
+            </table>
+        </form>
+        <div id="table-of-contents">
+            <div class="flex-container">
+                <h4 id="blog-index-heading" class="blog-heading">Table of Contents</h4>
+                <div class="arrow-down" id="blog-index-visible"></div>     <!--    Can do CSS ANIMATION work here  -->
+            </div>
+            <ul id="blog-index">
+            </ul>
+        </div>
+    </main>
+
+    <section id="write-content">
+        <form id="write-content-form" target=_self>
+            <div>
+                <label for="content-type">Type Of Content : </label>
+                <select id="content-type" name="content-type">
+                    <option value="para" default>Paragraph</option>
+                    <option value="heading">Heading</option>
+                    <option value="img">Image</option>
+                    <option value="list">List</option>
+                    <option value="iframe">Youtube Video</option>
+                </select>
+            </div>
+            <div>
+                <label>Write the content here : </label>
+                <br>
+                <p id="content-text" contenteditable="true"></p>
+            </div>
+            <div id="content-buttons">
+                <button onclick="clearContent()" type="button">Clear</button>
+                <button onclick="addElementToMain()" type="button">Add</button>
+                <button onclick="getBlog()" type="button">Submit</button>
+            </div>
+        </form>
+    </section>
+
+    <footer class="main-footer">
+        <h3>Made by Shreyansh</h3>
+        <p>If you found any bug, please mail me with screenshot on : <u>shreyanshagarwal2022@gmail.com</u></p>
+        <p><a href="javascript:void(0);"><u>About Shreyansh</u></a></p>
+        <p><a href="#"><u>Back To Top</u></a></p>
+    </footer>
+</body>
+</html>
