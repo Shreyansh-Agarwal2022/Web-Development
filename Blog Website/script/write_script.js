@@ -164,7 +164,7 @@ main.addEventListener('click', function (event) {
     const target = event.target;
 
     // Check if the clicked element has the deletable-content class
-    if(target.id !== "blog-title" && target.id !== "blog-date" && target.id !== "blog-image" && target.id !== "table-of-contents")
+    if(target.id !== "blog-title" && target.id !== "blog-date" && target.id !== "blog-image")
     {
         let clickCount = parseInt(target.getAttribute('data-click-count')) || 0;
         let lastClickTime = parseInt(target.getAttribute('data-last-click-time')) || 0;
