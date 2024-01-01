@@ -5,7 +5,6 @@ let blogIndexDirection = true;
 
 //Event-Listener for table of contents to show and hide on click of an arrow button
 blogIndex.addEventListener("click", function() {
-    console.log("Working");
     if (blogIndexDirection) {
         blogIndexDirection = false;
         blogIndex.style.transform = "rotate(180deg)";
